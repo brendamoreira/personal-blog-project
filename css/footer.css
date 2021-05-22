@@ -1,0 +1,8 @@
+footer{
+    grid-area: ft;
+    text-align: left;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
