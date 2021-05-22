@@ -1,3 +1,4 @@
+@import url("header.css");
 body{
     margin: 0;
     height: 100vh;
@@ -15,27 +16,6 @@ body{
     "hd hd hd"
     "main main sd"
     "ft ft ft";
-}
-header{
-    grid-area:hd;
-    background-image: linear-gradient(180deg, #feb7d0, #fbf5f4);
-    font-family: 'Raleway', sans-serif;
-}
-h1{
-    font: 3rem 'Sacramento', cursive;
-    text-decoration: underline dashed 1.5px;
-    text-shadow: 1.5px 1.5px 2px white;
-    color: gray;
-    margin: 10px;
-}
-h3{
-    margin: 15px;
-    font-size: 1.3rem;
-}
-.subtitle{
-    font-size: 1.15rem;
-    font-weight: 200;
-    text-shadow: 1px 1px white;
 }
 .about{
     border: 1px dashed #fca7c5;
