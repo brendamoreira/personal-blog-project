@@ -1,16 +1,7 @@
 @import url("header.css");
 @import url("footer.css");
-body{
-    margin: 0;
-    height: 100vh;
-}
-.container{
-    font-family: 'Sacramento', cursive;
-    background-color: #fbf5f4;
-    color: #E36191;
-    display: grid;
-    height: 100%;
-    text-align: center;
+@import url("commom.css");
+.cont-main{
     grid-template-columns: 2fr 2fr 1fr;
     grid-template-rows: 1fr 3fr 0.5fr;
     grid-template-areas: 
@@ -48,9 +39,6 @@ main{
     margin:0 5px;
     position: relative;
 }
-p{
-    font-family: 'Raleway', sans-serif;
-}
 .link{
     font-family: 'Raleway', sans-serif;
     font-size: 0.6rem;
@@ -78,4 +66,31 @@ figcaption{
     font-family: 'Raleway', sans-serif;
     font-size: 0.8rem;
     padding: 10px;
+}
+@media(min-width: 600px) and (max-width:1024px){
+    .cont-main{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr 4fr 0.4fr;
+        grid-template-areas: 
+        "hd hd"
+        "sd sd"
+        "main main"
+        "ft ft";
+    }
+    .about{
+        display: flex;
+        align-items: center;
+    }
+    .avatar{
+        width: 15%;
+    }
+    figcaption{
+        writing-mode: vertical-lr;
+    }
+    .description, .post-name, .post-detail{
+        margin: auto;
+    }
+    .link{
+        position:initial;
+    }
 }
