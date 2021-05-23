@@ -2,7 +2,7 @@
 @import url("footer.css");
 @import url("commom.css");
 .cont-post{
-    grid-template-rows: 1fr 2fr  1fr 0.5fr;
+    grid-template-rows: 1fr 2fr 1fr 0.5fr;
     grid-template-columns: 1fr 3fr;
     grid-template-areas: 
     "hd hd"
@@ -26,6 +26,11 @@ main{
     background-color: rgba(254, 252, 237, 0.605);
     margin: 15px;
     position: relative;
+}
+.post-detail{
+    max-height: 65%;
+    padding: 10px;
+    overflow: scroll;
 }
 .author{
     justify-content: flex-end;
@@ -53,6 +58,9 @@ main{
     font-weight: 100;
     font-style: italic;
 }
+.main-page{
+    display: none;
+}
 .sidebar a{
     color: #EE85AC;
 }
@@ -60,9 +68,42 @@ main{
     color: #E36191;
 }
 .ads{
+    grid-area: ad;
     margin: 10px;
 }
 .ad{
     border-radius: 50%;
     width: 25%;
+}
+@media (max-width: 1024px){
+    .cont-post{
+    grid-template-rows: 1fr 2fr 0.5fr 0.5fr 0.4fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "sb"
+    "ad"
+    "ft";
+    }
+    h4{
+        margin:auto;
+    }
+    .post-detail{
+        max-height: 80%;
+    }
+    .sidebar{
+        margin: 0 10px;
+    }
+    .ad{
+        width: 10%;
+    }
+}
+@media (max-width: 600px){
+    .sidebar-p{
+        display: none;
+    }
+    .main-page{
+        display: initial;
+    }
 }
