@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+.container{
+    font-family: 'Sacramento', cursive;
+    background-color: #fbf5f4;
+    color: #E36191;
+    display: grid;
+    height: 100%;
+    text-align: center;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+}
