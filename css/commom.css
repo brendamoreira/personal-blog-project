@@ -1,16 +1,16 @@
-body{
-    margin: 0;
-    height: 100vh;
+body {
+  margin: 0;
+  height: 100vh;
 }
-.container{
-    font-family: 'Sacramento', cursive;
-    background-color: #fbf5f4;
-    color: #E36191;
-    display: grid;
-    height: 100%;
-    text-align: center;
-    overflow: auto;
+.container {
+  font-family: "Sacramento", cursive;
+  background-color: #fbf5f4;
+  color: #e36191;
+  display: grid;
+  height: 100%;
+  text-align: center;
+  overflow: auto;
 }
-p{
-    font-family: 'Raleway', sans-serif;
+p {
+  font-family: "Raleway", sans-serif;
 }

@@ -1,107 +1,111 @@
 @import url("header.css");
 @import url("footer.css");
 @import url("commom.css");
-.cont-main{
-    grid-template-columns: 2fr 2fr 1fr;
-    grid-template-rows: 1fr 3fr 0.5fr;
-    grid-template-areas: 
+.cont-main {
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 1fr 3fr 0.5fr;
+  grid-template-areas:
     "hd hd hd"
     "main main sd"
     "ft ft ft";
 }
-.about{
-    border: 1px dashed #fca7c5;
-    border-radius: 10px;
-    padding: 10px;
-    grid-area: sd;
-    margin: 0 10px;
-    box-shadow: 1px 1px 10px lightgray;
-    background-color: rgba(254, 252, 237, 0.605);
-    font-size: 1.3rem;
+.about {
+  border: 1px dashed #fca7c5;
+  border-radius: 10px;
+  padding: 10px;
+  grid-area: sd;
+  margin: 0 10px;
+  box-shadow: 1px 1px 10px lightgray;
+  background-color: rgba(254, 252, 237, 0.605);
+  font-size: 1.3rem;
 }
-main{
-    grid-area: main;
-    margin: 10px 0 10px 10px;
+main {
+  grid-area: main;
+  margin: 10px 0 10px 10px;
 }
-.posts{
-    display: grid;
-    height: 100%;
+.posts {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.post {
+  border: thin dashed lightgray;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 1px 1px 4px lightgray;
+  background-color: rgba(254, 252, 237, 0.605);
+  margin: 0 5px;
+  position: relative;
+}
+.link {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.6rem;
+  background-color: #f6afca;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: 0.3s;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+.link:hover,
+.link:active {
+  background-color: #ee85ac;
+}
+.avatar {
+  width: 60%;
+  border-radius: 50%;
+}
+figcaption {
+  font-size: 0.9rem;
+}
+.description {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  padding: 10px;
+}
+@media (max-width: 1024px) {
+  .cont-main {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap:10px;
+    grid-template-rows: 1fr 1fr 4fr 0.4fr;
+    grid-template-areas:
+      "hd hd"
+      "sd sd"
+      "main main"
+      "ft ft";
+  }
+  main {
+    margin: 5px;
+  }
+  .posts {
+    grid-gap: 5px;
+  }
+  .about {
+    display: flex;
+    align-items: center;
+  }
+  .avatar {
+    width: 15%;
+  }
+  figcaption {
+    writing-mode: vertical-lr;
+  }
+  .description,
+  .post-name,
+  .post-detail {
+    margin: auto;
+  }
 }
-.post{
-    border: thin dashed lightgray;
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 1px 1px 4px lightgray;
-    background-color: rgba(254, 252, 237, 0.605);
-    margin:0 5px;
-    position: relative;
-}
-.link{
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.6rem;
-    background-color: #F6AFCA;
-    border-radius: 5px;
-    color: white;
-    padding: 5px 10px;
-    text-decoration: none;
-    transition: 0.3s;
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-}
-.link:hover, .link:active {
-    background-color: #EE85AC;
-}
-.avatar{
-    width: 60%;
-    border-radius: 50%;
-}
-figcaption{
-   font-size: 0.9rem; 
-}
-.description{
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.8rem;
-    padding: 10px;
-}
-@media (max-width:1024px){
-    .cont-main{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 1fr 4fr 0.4fr;
-        grid-template-areas: 
-        "hd hd"
-        "sd sd"
-        "main main"
-        "ft ft";
-    }
-    main{
-        margin: 5px;
-    }
-    .posts{
-        grid-gap: 5px;
-    }
-    .about{
-        display: flex;
-        align-items: center;
-    }
-    .avatar{
-        width: 15%;
-    }
-    figcaption{
-        writing-mode: vertical-lr;
-    }
-    .description, .post-name, .post-detail{
-        margin: auto;
-    }
-}
-@media(max-width: 600px) {
-    .about-me, figcaption{
-        display: none;
-    }
-    .link{
-        position: initial;
-    }
+@media (max-width: 600px) {
+  .about-me,
+  figcaption {
+    display: none;
+  }
+  .link {
+    position: initial;
+  }
 }
