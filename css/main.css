@@ -67,7 +67,7 @@ figcaption{
     font-size: 0.8rem;
     padding: 10px;
 }
-@media(min-width: 600px) and (max-width:1024px){
+@media (max-width:1024px){
     .cont-main{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr 1fr 4fr 0.4fr;
@@ -76,6 +76,12 @@ figcaption{
         "sd sd"
         "main main"
         "ft ft";
+    }
+    main{
+        margin: 5px;
+    }
+    .posts{
+        grid-gap: 5px;
     }
     .about{
         display: flex;
@@ -90,7 +96,12 @@ figcaption{
     .description, .post-name, .post-detail{
         margin: auto;
     }
+}
+@media(max-width: 600px) {
+    .about-me, figcaption{
+        display: none;
+    }
     .link{
-        position:initial;
+        position: initial;
     }
 }

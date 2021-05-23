@@ -9,6 +9,7 @@ body{
     display: grid;
     height: 100%;
     text-align: center;
+    overflow: auto;
 }
 p{
     font-family: 'Raleway', sans-serif;
