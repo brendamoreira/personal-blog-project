@@ -15,6 +15,12 @@
       <header>
         <h1>Matcha the Dog</h1>
         <h3 class="subtitle">My adventures I post here!</h3>
+        <nav>
+          <ul>
+            <li><a class="navbar" href="index.html">Home</a></li>
+            <li><a class="navbar" href="post.html">Posts</a></li>
+          </ul>
+        </nav>
       </header>
       <section class="sidebar">
         <h4>Other Posts</h4>
@@ -35,15 +41,19 @@
       </section>
       <main>
         <h3>Lorem Ipsum</h3>
-        <p class="post-detail">
+        <div class="post-detail">
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum
           vehicula velit quis viverra. Vestibulum ante ipsum primis in faucibus
           orci luctus et ultrices posuere cubilia curae; Integer in orci rhoncus
           mi maximus posuere eget vel sem. Quisque semper non libero id egestas.
           Ut ullamcorper vulputate volutpat. Sed vitae auctor nisi, eget
           vestibulum lacus. Etiam cursus volutpat orci, eu bibendum neque
-          scelerisque tincidunt.<br />
-          Duis sit amet cursus justo. Nullam tempor leo vel ligula dictum, eu
+          scelerisque tincidunt.<br /></p>
+          <blockquote cite="http://www.lipsum.com/feed/html">Duis sit amet cursus justo. Nullam tempor leo vel ligula dictum, eu
+            tempus est vestibulum. Suspendisse potenti. Morbi accumsan nunc
+            euismod tortor lacinia gravida.</blockquote> 
+          <p>Duis sit amet cursus justo. Nullam tempor leo vel ligula dictum, eu
           tempus est vestibulum. Suspendisse potenti. Morbi accumsan nunc
           euismod tortor lacinia gravida. Praesent convallis vulputate
           ullamcorper. Quisque metus metus, porta vestibulum ante in, bibendum
@@ -65,9 +75,10 @@
           primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
           accumsan ante sit amet eros iaculis fringilla.
         </p>
+        </div>
         <div class="author">
-          <figcaption>This post was written by me!</figcaption>
           <img class="avatar" src="images/avatar-post.png" alt="Happy dog" />
+          <figcaption>This post was written by me!</figcaption>
         </div>
       </main>
       <footer>

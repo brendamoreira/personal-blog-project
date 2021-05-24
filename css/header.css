@@ -19,3 +19,14 @@ h3 {
   font-weight: 200;
   text-shadow: 1px 1px white;
 }
+li{
+  display: inline;
+  padding: 10px;
+}
+.navbar {
+  color: #ee85ac;
+}
+.navbar:hover,
+.navbar:active {
+  color: #e36191;
+}

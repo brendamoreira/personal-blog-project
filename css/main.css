@@ -68,6 +68,9 @@ figcaption {
   font-size: 0.8rem;
   padding: 10px;
 }
+.social-media{
+  font-size: 0.8rem;
+}
 @media (max-width: 1024px) {
   .cont-main {
     grid-template-columns: repeat(2, 1fr);
